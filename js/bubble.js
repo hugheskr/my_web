@@ -1,6 +1,27 @@
 //D3 Code for Bubble Chart
 
-(function() {
+var diameter = 600;
+
+// function checkSize() {
+//   if ($("h2").css("color", "green")) {
+//     diameter = 330;
+//     alert(diameter);
+//     generateGraph();
+//   } else {
+//     diameter = 600;
+//     alert(diameter);
+//     generateGraph();
+//   }
+// }
+
+// $(document).ready(function() {
+//   // run test on initial page load
+//   checkSize();
+//     // run test on resize of the window
+//   $(window).resize(checkSize);
+// });
+
+function generateGraph() {
   var json = {
     "children": [
       {
@@ -117,8 +138,6 @@
   }
 
   // D3 Bubble Chart
-  var diameter = 600;
-
   var svg = d3.select('#graph').append('svg')
                                .attr('width', diameter)
                                .attr('height', diameter);
@@ -149,7 +168,8 @@
   var textLabels = text.attr("x", function(d) { return d.x - (d.skill.length * 2.5); })
                        .attr("y", function(d) { return d.y; })
                        .text( function (d) { return d.label })
-                       .attr("font-family", "sans-serif")
                        .attr("font-size", "9px")
                        .attr("fill", "black");
-})();
+ }
+
+generateGraph();
