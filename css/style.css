@@ -871,6 +871,7 @@ there.
     z-index: 1;
     opacity: 1; }
 
+/*pop of green in nav*/
 .gpop {
   color: #97C30A; }
 
@@ -889,15 +890,42 @@ nav {
   nav div a {
     color: #97C30A; }
 
+/*fix a tags*/
 a {
   text-decoration: none; }
 
 a:hover {
   color: #1FBED6; }
 
+/*Logo*/
+.circle {
+  opacity: 0.8;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background: #1FBED6;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: -10px;
+  position: absolute;
+  z-index: 1; }
+
+/*About section*/
+.about h3 {
+  background-color: #97C30A;
+  color: white;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif; }
+
+/*style first sentence*/
 .firstSen span {
   font-weight: bold; }
 
+/*Skills Graph and Key*/
+/*space for first item in key*/
 .first {
   margin-top: 90px; }
 
@@ -932,56 +960,6 @@ a:hover {
 .general {
   background: #539099; }
 
-.about h3 {
-  background-color: #97C30A;
-  color: white;
-  font-weight: bold;
-  font-family: 'Oswald', sans-serif; }
-
-.school h3 {
-  background-color: #97C30A;
-  color: white;
-  font-weight: bold;
-  font-family: 'Oswald', sans-serif; }
-
-.projects h3 {
-  background-color: #97C30A;
-  color: white;
-  font-weight: bold;
-  font-family: 'Oswald', sans-serif; }
-.projects span {
-  font-weight: bold; }
-
-.projects a {
-  font-size: 25px;
-  font-weight: bold; }
-
-.googleMap {
-  height: 500px;
-  margin-bottom: 10px; }
-
-p span {
-  font-weight: bold; }
-
-.school li {
-  font-style: italic;
-  font-size: 12px; }
-
-.circle {
-  opacity: 0.8;
-  display: inline-block;
-  width: 120px;
-  height: 120px;
-  background: #1FBED6;
-  -moz-border-radius: 60px;
-  -webkit-border-radius: 60px;
-  border-radius: 60px;
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-bottom: -10px;
-  position: absolute;
-  z-index: 1; }
-
 .javascript, .html, .css, .angular, .jquery, .sass, .aria {
   fill: #FF6565;
   background: #FF6565; }
@@ -999,15 +977,43 @@ p span {
   background: #539099; }
 
 circle:hover {
-  opacity: .8; }
-
-text:hover {
-  font-size: 10px; }
+  opacity: .9; }
 
 text {
   font-weight: bold;
   fill: white; }
 
+/*School section*/
+.school h3 {
+  background-color: #97C30A;
+  color: white;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif; }
+
+.googleMap {
+  height: 500px;
+  margin-bottom: 10px; }
+
+p span {
+  font-weight: bold; }
+
+.school li {
+  font-style: italic;
+  font-size: 12px; }
+
+/*Projects section*/
+.projects h3 {
+  background-color: #97C30A;
+  color: white;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif; }
+.projects span {
+  font-weight: bold; }
+.projects a {
+  font-size: 25px;
+  font-weight: bold; }
+
+/*Contact Section*/
 footer {
   text-align: center;
   background-color: #1FBED6; }
