@@ -983,6 +983,9 @@ text {
   font-weight: bold;
   fill: white; }
 
+.graph {
+  margin-left: 0px; }
+
 /*School section*/
 .school h3 {
   background-color: #97C30A;
@@ -1036,5 +1039,12 @@ footer {
 
 svg:nth-of-type(2) {
   display: none; }
+
+@media screen and (min-width: 421px) {
+  h2 {
+    color: blue; } }
+@media screen and (max-width: 420px) {
+  h2 {
+    color: green; } }
 
 /*# sourceMappingURL=style.css.map */
