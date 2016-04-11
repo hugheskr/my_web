@@ -1,0 +1,243 @@
+@import "normalize";
+@import "skeleton";
+
+$droid: 'Droid Serif', serif;
+
+$front: #FF6565;
+$back: #CC0967;
+$test: #25FFA2;
+$general: #539099;
+
+$grey: #333;
+$blue: #1FBED6;
+$light: #DADDE2;
+$green: #97C30A;
+$dark: #5F6B77;
+
+.background {
+  background: url(https://images6.alphacoders.com/405/405040.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  p {
+    color: $grey;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    padding-top: -10px;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+  }
+}
+
+/*pop of green in nav*/
+.gpop {
+  color: $green;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  div {
+    div {
+      display: inline;
+      color: $blue;
+    }
+    div p {
+  	  display: inline;
+  	  color: white;
+    }
+    a {
+  	  color: $green;
+    }
+  }
+}
+
+/*fix a tags*/
+a {
+	text-decoration: none;
+}
+
+a:hover {
+  color: $blue;
+}
+
+/*Logo*/
+.circle {
+  opacity: 0.8;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background: $blue;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: -10px;
+  position: absolute;
+  z-index: 1;
+}
+
+/*About section*/
+.about {
+  h3 {
+    background-color: $green;
+    color: white;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
+/*style first sentence*/
+.firstSen span {
+  font-weight: bold;
+}
+
+/*Skills Graph and Key*/
+/*space for first item in key*/
+.first {
+  margin-top: 90px
+}
+
+.graphContainer {
+  figure {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  h4 {
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid $blue;
+  }
+}
+
+.keyBubble {
+  width: 60px;
+  height: 60px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  margin: 5px;
+}
+
+.front {
+  background: $front;
+}
+.back {
+  background: $back;
+}
+.test {
+  background: $test;
+}
+.general {
+  background: $general;
+}
+
+.javascript, .html, .css, .angular, .jquery, .sass, .aria {
+  fill: $front;
+  background: $front;
+}
+
+.node, .express, .mongodb {
+  fill: $back;
+  background: $back;
+}
+
+.gulp, .webpack, .karma, .jasmine, .mocha, .chai, .tdd {
+  fill: $test;
+  background: $test;
+}
+
+.git, .linux, .funct_programming, .oop, .debugging, .ds_and_algs {
+  fill: $general;
+  background: $general;
+}
+
+circle:hover {
+  opacity: .8;
+}
+
+text:hover {
+  font-size: 10px
+}
+
+text {
+  font-weight: bold;
+  fill: white;
+}
+
+/*School section*/
+.school {
+  h3 {
+    background-color: $green;
+    color: white;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
+.googleMap {
+  height:500px;
+  margin-bottom: 10px;
+}
+
+p span{
+  font-weight: bold;
+}
+
+.school li {
+  font-style: italic;
+  font-size: 12px;
+}
+
+/*Projects section*/
+.projects {
+  h3 {
+    background-color: $green;
+    color: white;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+  }
+  span {
+    font-weight: bold;
+  }
+  a {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+/*Contact Section*/
+footer {
+  text-align: center;
+  background-color: $blue;
+  h3 {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
+  }
+  h5 {
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+  }
+  a {
+    color: white;
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    font-family: 'Oswald', sans-serif;
+  }
+  a:hover {
+  color: $dark;
+  }
+}
+
