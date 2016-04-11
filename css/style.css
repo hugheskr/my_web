@@ -1034,4 +1034,7 @@ footer {
   footer a:hover {
     color: #5F6B77; }
 
+svg:nth-of-type(2) {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
