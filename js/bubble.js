@@ -15,12 +15,10 @@ function widthChange(mq) {
   if (mq.matches) {
     // window width is at least 500px
     diameter = 600;
-    console.log(diameter);
     generateGraph(diameter);
   } else {
     // window width is less than 500px
     diameter = 390;
-    console.log(diameter);
     generateGraph(diameter);
   }
 
