@@ -1,27 +1,32 @@
 //D3 Code for Bubble Chart
+var run;
+var diameter;
 
-var diameter = 600;
+// media query event handler
+if (matchMedia) {
+  var mq = window.matchMedia("(min-width: 500px)");
+  mq.addListener(widthChange);
+  widthChange(mq);
+}
 
-// function checkSize() {
-//   if ($("h2").css("color", "green")) {
-//     diameter = 330;
-//     alert(diameter);
-//     generateGraph();
-//   } else {
-//     diameter = 600;
-//     alert(diameter);
-//     generateGraph();
-//   }
-// }
+// media query change
+function widthChange(mq) {
 
-// $(document).ready(function() {
-//   // run test on initial page load
-//   checkSize();
-//     // run test on resize of the window
-//   $(window).resize(checkSize);
-// });
+  if (mq.matches) {
+    // window width is at least 500px
+    diameter = 600;
+    console.log(diameter);
+    generateGraph(diameter);
+  } else {
+    // window width is less than 500px
+    diameter = 390;
+    console.log(diameter);
+    generateGraph(diameter);
+  }
 
-function generateGraph() {
+}
+
+function generateGraph(diameter) {
   var json = {
     "children": [
       {
@@ -82,7 +87,7 @@ function generateGraph() {
       {
         "skill":"Webpack",
         "label": "Webpack",
-        "size": 300
+        "size": 350
       },
       {
         "skill":"Karma",
@@ -116,7 +121,7 @@ function generateGraph() {
       },
       {
         "skill":"Funct_Programming",
-        "label": "Funct. Programming",
+        "label": "Funct Prog",
         "size": 860
       },
       {
@@ -131,14 +136,21 @@ function generateGraph() {
       },
       {
         "skill":"DS_And_Algs",
-        "label": "DS and Algs",
+        "label": "DS & Algs",
         "size": 400
       }
     ]
   }
 
+  if (run) {
+    $( "#oldsvg" ).remove();
+    console.log('removed');
+  }
+
+  run = true;
   // D3 Bubble Chart
   var svg = d3.select('#graph').append('svg')
+                               .attr('id', 'oldsvg')
                                .attr('width', diameter)
                                .attr('height', diameter);
 
@@ -165,11 +177,10 @@ function generateGraph() {
                 .enter()
                 .append("text");
 
-  var textLabels = text.attr("x", function(d) { return d.x - (d.skill.length * 2.5); })
+  var textLabels = text.attr("x", function(d) { return d.x - (d.label.length * 2.5); })
                        .attr("y", function(d) { return d.y; })
                        .text( function (d) { return d.label })
                        .attr("font-size", "9px")
                        .attr("fill", "black");
- }
+}
 
-generateGraph();
