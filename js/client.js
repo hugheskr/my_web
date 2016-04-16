@@ -1,7 +1,7 @@
 //Scrolling with anchors
 
 $(document).ready(function(){
-  $('a').on('click', function(event) {
+  $('.navbtn').on('click', function(event) {
 	  event.preventDefault();
     $('html, body').animate({
       scrollTop: $($.attr(this, 'href')).offset().top
