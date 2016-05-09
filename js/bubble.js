@@ -4,7 +4,7 @@ var diameter;
 
 // media query event handler
 if (matchMedia) {
-  var mq = window.matchMedia("(min-width: 500px)");
+  var mq = window.matchMedia("(min-width: 550px)");
   mq.addListener(widthChange);
   widthChange(mq);
 }

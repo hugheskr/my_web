@@ -927,7 +927,7 @@ a:hover {
 /*Skills Graph and Key*/
 /*space for first item in key*/
 .first {
-  margin-top: 90px; }
+  margin-top: 10px; }
 
 .graphContainer figure {
   margin-top: 0px;
