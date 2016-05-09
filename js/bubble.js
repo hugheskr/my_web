@@ -18,10 +18,9 @@ function widthChange(mq) {
     generateGraph(diameter);
   } else {
     // window width is less than 500px
-    diameter = 330;
+    diameter = 320;
     generateGraph(diameter);
   }
-
 }
 
 function generateGraph(diameter) {
