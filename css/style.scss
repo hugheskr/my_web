@@ -16,10 +16,10 @@ $dark: #5F6B77;
 
 .background {
   background: url(https://images6.alphacoders.com/405/405040.jpg) no-repeat center center fixed;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   p {
     color: $grey;
     font-family: 'Oswald', sans-serif;
