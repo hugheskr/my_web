@@ -1,6 +1,7 @@
 //D3 Code for Bubble Chart
 var run;
 var diameter;
+var textSize;
 
 // media query event handler
 if (matchMedia) {
@@ -15,10 +16,12 @@ function widthChange(mq) {
   if (mq.matches) {
     // window width is at least 788px
     diameter = 600;
+    textSize = '10px';
     generateGraph(diameter);
   } else {
     // window width is less than 788px
     diameter = 355;
+    textSize = '8px';
     generateGraph(diameter);
   }
 }
@@ -133,7 +136,7 @@ function generateGraph(diameter) {
       },
       {
         "skill":"DS_And_Algs",
-        "label": "DS & Algs",
+        "label": "DS&Algs",
         "size": 400
       }
     ]
@@ -177,7 +180,7 @@ function generateGraph(diameter) {
   var textLabels = text.attr("x", function(d) { return d.x - (d.label.length * 2.5); })
                        .attr("y", function(d) { return d.y; })
                        .text( function (d) { return d.label })
-                       .attr("font-size", "9px")
+                       .attr("font-size", textSize)
                        .attr("fill", "black");
 }
 
