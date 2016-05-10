@@ -20,7 +20,7 @@ $dark: #5F6B77;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
   p {
     color: $grey;
     font-family: 'Oswald', sans-serif;
