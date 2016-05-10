@@ -4,7 +4,7 @@ var diameter;
 
 // media query event handler
 if (matchMedia) {
-  var mq = window.matchMedia("(min-width: 700px)");
+  var mq = window.matchMedia("(min-width: 788px)");
   mq.addListener(widthChange);
   widthChange(mq);
 }
@@ -13,11 +13,11 @@ if (matchMedia) {
 function widthChange(mq) {
 
   if (mq.matches) {
-    // window width is at least 500px
+    // window width is at least 788px
     diameter = 600;
     generateGraph(diameter);
   } else {
-    // window width is less than 500px
+    // window width is less than 788px
     diameter = 355;
     generateGraph(diameter);
   }

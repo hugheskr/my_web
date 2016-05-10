@@ -128,17 +128,30 @@ a:hover {
   margin: 5px;
 }
 
-.front {
+.keyBubble.front {
   background: $front;
 }
-.back {
+.keyBubble.back {
   background: $back;
 }
-.test {
+.keyBubble.test {
   background: $test;
 }
-.general {
+.keyBubble.general {
   background: $general;
+}
+
+.front {
+  color: $front;
+}
+.back {
+  color: $back;
+}
+.test {
+  color: $test;
+}
+.general {
+  color: $general;
 }
 
 .javascript, .html, .css, .angular, .jquery, .sass, .aria {
@@ -248,4 +261,58 @@ svg {
 }
 svg:nth-of-type(2) {display: none}
 
+@media screen and (max-width:1070px) {
+  nav a {
+    visibility: hidden;
+  }
+}
 
+@media screen and (max-width:549px) {
+  nav a {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width:787px) {
+  .keyBubble {
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width:549px) {
+  .unit {
+    display: inline-block;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width:453px) {
+  .unit p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:804px) {
+  img {
+    width: 230px;
+    height: 153px;
+  }
+}
+
+@media screen and (max-width:540px) {
+  img {
+    width: 335px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width:370px) {
+  body {
+    width: 370px;
+  }
+}

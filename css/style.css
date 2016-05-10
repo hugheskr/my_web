@@ -858,10 +858,10 @@ there.
 /* Larger than Desktop HD */
 .background {
   background: url(https://images6.alphacoders.com/405/405040.jpg) no-repeat center center fixed;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   .background p {
     color: #333;
     font-family: 'Oswald', sans-serif;
@@ -948,17 +948,29 @@ a:hover {
   border-radius: 30px;
   margin: 5px; }
 
-.front {
+.keyBubble.front {
   background: #FF6565; }
 
-.back {
+.keyBubble.back {
   background: #CC0967; }
 
-.test {
+.keyBubble.test {
   background: #25FFA2; }
 
-.general {
+.keyBubble.general {
   background: #539099; }
+
+.front {
+  color: #FF6565; }
+
+.back {
+  color: #CC0967; }
+
+.test {
+  color: #25FFA2; }
+
+.general {
+  color: #539099; }
 
 .javascript, .html, .css, .angular, .jquery, .sass, .aria {
   fill: #FF6565;
@@ -1043,5 +1055,38 @@ svg {
 
 svg:nth-of-type(2) {
   display: none; }
+
+@media screen and (max-width: 1070px) {
+  nav a {
+    visibility: hidden; } }
+@media screen and (max-width: 549px) {
+  nav a {
+    visibility: visible; } }
+@media screen and (max-width: 787px) {
+  .keyBubble {
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    margin: 5px; } }
+@media screen and (max-width: 549px) {
+  .unit {
+    display: inline-block;
+    padding-left: 10px; } }
+@media screen and (max-width: 453px) {
+  .unit p {
+    font-size: 16px; } }
+@media screen and (max-width: 804px) {
+  img {
+    width: 230px;
+    height: 153px; } }
+@media screen and (max-width: 540px) {
+  img {
+    width: 335px;
+    height: 220px; } }
+@media screen and (max-width: 370px) {
+  body {
+    width: 370px; } }
 
 /*# sourceMappingURL=style.css.map */
