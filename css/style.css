@@ -857,7 +857,7 @@ there.
 /* Larger than desktop */
 /* Larger than Desktop HD */
 .background {
-  background: url(https://images6.alphacoders.com/405/405040.jpg) no-repeat center center fixed;
+  background: url(https://images6.alphacoders.com/405/405040.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
