@@ -861,8 +861,7 @@ there.
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  -webkit-transform: translateZ(0); }
+  background-size: cover; }
   .background p {
     color: #333;
     font-family: 'Oswald', sans-serif;
