@@ -20,6 +20,12 @@ $dark: #5F6B77;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
   p {
     color: $grey;
     font-family: 'Oswald', sans-serif;
