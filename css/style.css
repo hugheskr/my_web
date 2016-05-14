@@ -996,7 +996,8 @@ text {
   fill: white; }
 
 .graph {
-  margin-left: 0px; }
+  margin-left: 0px;
+  margin-right: 0px; }
 
 /*School section*/
 .school h3 {
@@ -1083,10 +1084,15 @@ svg:nth-of-type(2) {
     height: 153px; } }
 @media screen and (max-width: 540px) {
   img {
-    width: 335px;
-    height: 220px; } }
-@media screen and (max-width: 370px) {
-  body {
-    width: 370px; } }
+    width: 270px;
+    height: 180px; } }
+@media screen and (max-width: 320px) {
+  html {
+    width: 320px; } }
+@media screen and (max-width: 349px) {
+  footer h5 {
+    font-size: 1.8rem; }
+  footer a {
+    font-size: 1.8rem; } }
 
 /*# sourceMappingURL=style.css.map */

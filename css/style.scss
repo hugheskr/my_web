@@ -186,6 +186,7 @@ text {
 
 .graph {
   margin-left: 0px;
+  margin-right: 0px;
 }
 
 /*School section*/
@@ -307,13 +308,24 @@ svg:nth-of-type(2) {display: none}
 
 @media screen and (max-width:540px) {
   img {
-    width: 335px;
-    height: 220px;
+    width: 270px;
+    height: 180px;
   }
 }
 
-@media screen and (max-width:370px) {
-  body {
-    width: 370px;
+@media screen and (max-width:320px) {
+  html {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width:349px) {
+  footer {
+    h5 {
+      font-size: 1.8rem;
+    }
+    a {
+      font-size: 1.8rem;
+    }
   }
 }

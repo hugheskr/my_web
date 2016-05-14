@@ -1,32 +1,48 @@
 //D3 Code for Bubble Chart
-var run;
-var diameter;
-var textSize;
+var run = false;
+//var diameter;
+//var textSize;
 
 // media query event handler
 if (matchMedia) {
-  var mq = window.matchMedia("(min-width: 788px)");
-  mq.addListener(widthChange);
-  widthChange(mq);
+  var big = window.matchMedia("(min-width: 788px)");
+  var little = window.matchMedia("(max-width: 369px)");
+
+  little.addListener(widthChange2);
+  big.addListener(widthChange);
+
+  widthChange2(little);
+  widthChange(big);
 }
 
 // media query change
-function widthChange(mq) {
-
-  if (mq.matches) {
+function widthChange(big) {
+  if (big.matches) {
     // window width is at least 788px
-    diameter = 600;
-    textSize = '10px';
-    generateGraph(diameter);
+    var diameter = 600;
+    var textSize = '10px';
   } else {
-    // window width is less than 788px
-    diameter = 355;
-    textSize = '8px';
-    generateGraph(diameter);
+    // window width less than 369px
+    var diameter = 355;
+    var textSize = '8px';
   }
+  generateGraph(diameter, textSize);
 }
 
-function generateGraph(diameter) {
+function widthChange2(little) {
+  if (little.matches) {
+    // window width is at least 370px
+    var diameter = 300;
+    var textSize = '5px';
+  } else {
+    // window width less than 369px
+    var diameter = 355;
+    var textSize = '8px';
+  }
+  generateGraph(diameter, textSize);
+}
+
+function generateGraph(diameter, textSize) {
   var json = {
     "children": [
       {
